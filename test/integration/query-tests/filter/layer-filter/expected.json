@@ -1,0 +1,19 @@
+[
+  { 
+    "type": "Feature", 
+    "id": "feature1",
+    "geometry": { 
+      "type": "Point",
+      "coordinates": [
+        0.0,
+        0.0
+      ] 
+    }, 
+    "properties": {
+      "key1": "value1",
+      "key2": 1.5,
+      "key3": false,
+      "key4": 0.5
+    } 
+  }
+]
