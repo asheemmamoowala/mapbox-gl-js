@@ -1,0 +1,79 @@
+{
+  "version": 8,
+  "metadata": {
+    "test": {
+      "width": 10,
+      "height": 10,
+      "queryGeometry": [
+        5,
+        5
+      ], 
+      "queryOptions": {
+        "filter": ["has", "key1" ],
+        "layers": ["layer4"]
+      },
+      "ignored": {
+        "js" : true
+      }
+    }
+  },
+  "center": [
+    0.0,
+    0.0
+  ],
+  "zoom": 0,
+  "sources": {
+    "source1": {
+      "type": "geojson",
+      "data": { 
+        "type": "Feature", 
+        "id": "feature1",
+        "geometry": { 
+          "type": "Point",
+          "coordinates": [
+            0.0,
+            0.0
+          ] 
+        }, 
+        "properties": {
+          "key1": "value1",
+          "key2": 1.5,
+          "key3": false,
+          "key4": 0.5
+        } 
+      }
+    },
+    "source2": {
+      "type": "geojson",
+      "data": { 
+        "type": "Feature", 
+        "id": "feature2",
+        "geometry": { 
+          "type": "Point",
+          "coordinates": [
+            0.0,
+            0.0
+          ] 
+        }, 
+        "properties": {
+          "key1": "value2",
+          "key2": 0.5,
+          "key3": true,
+          "key4": 1.5
+        } 
+      }
+    }
+  },
+  "layers": [
+    {
+      "id": "layer4",
+      "type": "circle",
+      "source": "source1"
+    },
+    {
+      "id": "layer3",
+      "type": "circle",
+      "source": "source2"
+    }
+  ]
+}
